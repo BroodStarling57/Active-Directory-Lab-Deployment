@@ -18,3 +18,5 @@ Personal RAM Utilisation for VM’s:
 | **Domain Controller** | **4GB (4096MB)** |
 |:---------------------:|:----------------:|
 | **Client1**           | **2GB (2048MB)** | 
+
+## Topology
