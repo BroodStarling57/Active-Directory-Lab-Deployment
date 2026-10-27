@@ -76,6 +76,9 @@ Step 9: Start -> ‘Administrative Tools’ -> ‘Active Directory Users and Com
 <div align="center"><img width="601" height="299" alt="image" src="https://github.com/user-attachments/assets/e3550405-f879-424c-bc07-5f86fe2c9c89" />
 <img width="601" height="299" alt="image" src="https://github.com/user-attachments/assets/e9384b35-569a-4261-822c-f33caac242d0" /> </div>
 
+**Tip:** Server Manager -> Local Server -> IE Enhanced Security Configuration, Turn OFF. It reduces the amount of security when running unknown scripts and websites, making the overall process much smoother.
+
+Step 10: To begin creating our simulated users, download the script and text file attached to the repository, copy-pasting both files as a folder onto the desktop. Open the text file and write your name into it at the top of the list so a regular domain account corresponding to you is created. Start -> Windows PowerShell -> Windows PowerShell ISE, run this programme as an administrator to ensure commands function. Click ‘Open Script’ on the toolbar and select script on desktop. Remove existing security features using ‘Set-ExecutionPolicy Unrestricted’, navigate to directory holding the script using the ‘cd’ command (Use the ‘ls’ command to verify contents inside). Once that is done, run the script and a period of time will be taken to create the approximate 1k users. 
 
 
 
