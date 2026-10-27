@@ -45,6 +45,10 @@ See the image below for reference as to how things should look. </div>
 
 <p align="center"> <img width="940" height="468" alt="image" src="https://github.com/user-attachments/assets/bca01b87-a87e-4eb6-bd70-7e9a35ee16fb" /> </p>
 
-<br>**TIP:** Before the completing the next step, on the interactive menu at the top of the VM, select ‘Devices’ and ‘Insert Guest Additions CD Image’. Then File explorer -> This PC -> ‘CD Drive (D:) VirtualBox Guest Additions’ -> Click and Install ‘VBox WindowsAdditions-amd64’. Once installed, choose to restart manually at a later time. This allows you to resize the VM window as you wish. 
+<div align="left"><br>**TIP:** Before the completing the next step, on the interactive menu at the top of the VM, select ‘Devices’ and ‘Insert Guest Additions CD Image’. Then File explorer -> This PC -> ‘CD Drive (D:) VirtualBox Guest Additions’ -> Click and Install ‘VBox WindowsAdditions-amd64’. Once installed, choose to restart manually at a later time. This allows you to resize the VM window as you wish. 
+
+(Optional Step: Go to Settings -> System -> Rename PC; purely namesake for identification. Choose to restart now or manually later).
+
+We will now begin adding the necessary roles and features we want a part of our active directory, referencing the bottom part of our topology, this would include; domain services, NAT/RAS and DHCP server scope. </div>
 
 
