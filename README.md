@@ -57,5 +57,9 @@ We will now begin adding the necessary roles and features we want a part of our 
 
 Step 6: Add roles & features -> Add ‘Active Directory Domain Services’ -> Post-Deployment Configuration (You will see a flag in the top-right corner of the server manager application with a warning icon, click on it and select the prompt for configuration). A window will open similar to what is displayed below, input the name of your domain, click next. Input your chosen password when requested and then click next till you are able to install. After this process is completed, the device will restart as a virtual domain controller, otherwise known as an administrator.
 
+<div align="center"><img width="601" height="299" alt="image" src="https://github.com/user-attachments/assets/0aed0d50-7c02-4589-8b02-5dc0ae0d5308" />
+
+<img width="940" height="467" alt="image" src="https://github.com/user-attachments/assets/a4096c9b-924a-4d3a-afd2-27e09b805a02" /> </div>
+
 
 
