@@ -18,4 +18,4 @@ Personal RAM Utilisation for VM’s:
 <p align="center">
 | Domain Controller | 4GB (4096MB) |
 |-------------------|--------------|
-| Client1           | 2GB (2048MB) | </p>
+| Client1           | 2GB (2048MB) | 
