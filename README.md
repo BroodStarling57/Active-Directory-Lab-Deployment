@@ -29,9 +29,9 @@ Step 1: Download Oracle VirtualBox and relevant ISOs listed above. Create two vi
 
 <p align="center"> <img width="934" height="502" alt="image" src="https://github.com/user-attachments/assets/0d7e1d65-37fa-4d97-8c7c-66cb4b83aa40" /> </p>
 
-<div align="justify"> Step 2: After both VM’s have been created, right-click into the DC, Settings -> Expert -> Network; enable two adapters, configuring each to attach respectively to NAT and an internal network. Access the same settings in the client machine but only enable one adapter, configuring it to attach to the internal network.
+<div align="left"> Step 2: After both VM’s have been created, right-click into the DC, Settings -> Expert -> Network; enable two adapters, configuring each to attach respectively to NAT and an internal network. Access the same settings in the client machine but only enable one adapter, configuring it to attach to the internal network.
 
-**Tip:** Before we start using these machines, go to Settings -> Expert -> General -> Features and enable bi-directional drag ‘n drop and shared clipboard for quality-of-life purposes.
+<br>**Tip:** Before we start using these machines, go to Settings -> Expert -> General -> Features and enable bi-directional drag ‘n drop and shared clipboard for quality-of-life purposes.
 
 Now that’s been completed, for the next few steps we will put aside the client machine and focus solely on configuring our DC VM.
 
