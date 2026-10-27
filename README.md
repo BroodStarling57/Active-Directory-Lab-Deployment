@@ -73,6 +73,9 @@ Before we begin creating simulated users for our directory, we will first create
 
 Step 9: Start -> ‘Administrative Tools’ -> ‘Active Directory Users and Computers’. Right-click your domain name tab and create an organisational unit called ‘Admins’. Create a new user within this folder following the admin account convention ‘a-(First initial)(Last name)’. Make sure password is memorable and there is no expiry date. After credentials have been created, right-click the user account and access properties; click ‘member of’, find and resolve to ‘Domain Admins’, then click apply. Log out and into the dedicated account, which we will use for the remainder of this project. The images below can be used as references as to how things should look.
 
+<div align="center"><img width="601" height="299" alt="image" src="https://github.com/user-attachments/assets/e3550405-f879-424c-bc07-5f86fe2c9c89" />
+<img width="601" height="299" alt="image" src="https://github.com/user-attachments/assets/e9384b35-569a-4261-822c-f33caac242d0" /> </div>
+
 
 
 
