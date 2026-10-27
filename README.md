@@ -15,6 +15,6 @@ This project aims to assist in the configuration of an active directory (AD) env
 **WARNING:** Ensure the combined RAM allocated to all VMs does not exceed 50% of your host system's total RAM, leaving sufficient memory for the host OS and other applications.
 
 Personal RAM Utilisation for VM’s:
-| Domain Controller --- | 4GB (4096MB) |        
-| Client1           --- | 2GB (2048MB) | 
- 
+| Domain Controller | 4GB (4096MB) |
+|-------------------|--------------|
+| Client1           | 2GB (2048MB) |
