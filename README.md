@@ -50,7 +50,6 @@ See the image below for reference as to how things should look. </div>
 (Optional Step: Go to Settings -> System -> Rename PC; purely namesake for identification. Choose to restart now or manually later).
 
 We will now begin adding the necessary roles and features we want a part of our active directory, referencing the bottom part of our topology, this would include; domain services, NAT/RAS and DHCP server scope. </div>
-
 <br> **Note:** The following steps 6–8 can be installed together to save time as shown below. However, during the initial learning process, it is best advised you follow steps in order to understand each feature and its installation.
 
 <p align="center"> <img width="601" height="299" alt="image" src="https://github.com/user-attachments/assets/61d2bfb6-c57f-453f-8aee-0545fd93df38" /> </p>
