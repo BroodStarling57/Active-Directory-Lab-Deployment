@@ -67,3 +67,16 @@ Step 7: Log back into the domain controller and open server manager. Add roles &
 
 Step 8: To implement the DHCP server for our active directory; Add roles & features -> DHCP Server. Click next till you reach the end and install. After installation is complete, open tools in server manager and select DHCP. Expand the tab denoting the name of your domain (this project personally used ‘mydomain.com’ so the tab would be labelled ‘dc.mydomain.com’), right-click IPv4 and select ‘New Scope’. Refer to the topology and input the necessary details. The name of the scope is upto personal discretion, this project simply named it ‘172.16.0.100-200’ (if you forget to input a default gateway, Server Options -> 003 Routing -> Input IP). Authorise the DHCP server following this and refresh IPv4/6.
 
+All roles and features necessary for our active directory to function have now been configured.
+
+Before we begin creating simulated users for our directory, we will first create a dedicated admin account for our active directory to add an aspect of security within this project. This can be done prior to our feature installations, but for simplicity’s sake we will do it now. When repeating this project, play around and jumble steps around to find out what configuration process you prefer.
+
+Step 9: Start -> ‘Administrative Tools’ -> ‘Active Directory Users and Computers’. Right-click your domain name tab and create an organisational unit called ‘Admins’. Create a new user within this folder following the admin account convention ‘a-(First initial)(Last name)’. Make sure password is memorable and there is no expiry date. After credentials have been created, right-click the user account and access properties; click ‘member of’, find and resolve to ‘Domain Admins’, then click apply. Log out and into the dedicated account, which we will use for the remainder of this project. The images below can be used as references as to how things should look.
+
+
+
+
+
+
+
+
