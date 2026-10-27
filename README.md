@@ -3,12 +3,12 @@
 <p align="left"> 
 This project aims to assist in the configuration of an active directory (AD) environment, similar to those found in real-world corporate systems. A PowerShell script will be used to create fictional domain user accounts, replicating a realistic organisational structure whilst providing practical, hands-on experience with skills relevant to active directory administration. To facilitate this learning process, the following environment shall be deployed using virtualisation software, providing an isolated and controlled setting that both minimises the risk of any misconfigurations affecting the host operating system and promotes experimentation; flexibility and security is improved whilst simultaneously making this project more friendly to users with limited hardware capabilities. </p>
 
-## Software Requirements 💻:
+### Software Requirements 💻:
 - 🔗 [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) 
 - 🔗 [Windows Server 2022 Evaluation ISO](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022) 
 - 🔗 [Windows 10 Evaluation ISO](https://www.microsoft.com/en-gb/software-download/windows10)
 
-## Hardware Requirements 💾⚙️:
+### Hardware Requirements 💾⚙️:
 -	Minimum RAM: 2 GB per virtual machine (VM).
 -	Recommended RAM: 4GB of usable RAM per VM.
 
@@ -19,12 +19,12 @@ Personal RAM Utilisation for VM’s:
 |:---------------------:|:----------------:|
 | **Client1**           | **2GB (2048MB)** | 
 
-## Topology:
+## AD Topology
 <p align="left"> The diagram below illustrates the general topology that will be referenced throughout the project, highlighting the overall structure, components and relationships between the various elements involved. </p>
 
 <p align="center"><img width="1919" height="1079" alt="#1" src="https://github.com/user-attachments/assets/2ed7d17b-4404-43bd-8b61-503fda309ce9" /></p>
 
-# Methodology:
+# Methodology
 Step 1: Download Oracle VirtualBox and relevant ISOs listed above. Create two virtual machines (names can be of any personal preference), one to act as the domain controller (DC) for AD administration and the other as a client machine. Install Windows Server 2022 ISO onto the DC and Windows 10 ISO to the client virtual machine (VM). 
 
 <p align="center"> <img width="934" height="502" alt="image" src="https://github.com/user-attachments/assets/0d7e1d65-37fa-4d97-8c7c-66cb4b83aa40" /> </p>
@@ -80,9 +80,22 @@ Step 9: Start -> ‘Administrative Tools’ -> ‘Active Directory Users and Com
 
 Step 10: To begin creating our simulated users, download the script and text file attached to the repository, copy-pasting both files as a folder onto the desktop. Open the text file and write your name into it at the top of the list so a regular domain account corresponding to you is created. Start -> Windows PowerShell -> Windows PowerShell ISE, run this programme as an administrator to ensure commands function. Click ‘Open Script’ on the toolbar and select script on desktop. Remove existing security features using ‘Set-ExecutionPolicy Unrestricted’, navigate to directory holding the script using the ‘cd’ command (Use the ‘ls’ command to verify contents inside). Once that is done, run the script and a period of time will be taken to create the approximate 1k users. 
 
+<p align="center"><img width="602" height="299" alt="image" src="https://github.com/user-attachments/assets/fddea346-782a-4a28-a4f4-a371262565b9" /></p>
 
+**Tip:** For proof purposes, as showcased in the image above, head back to ‘Active Directory Users & Computers’ and it will display all the newly added users to the virtual domain.
 
+Step 11: If the client machine has already been created according to prior instructions, start it alongside the DC so that both machines are running simultaneously. Once done, a notification will appear on the client machine desktop asking whether the device should be discoverable to other networks, click yes. On the client VM, Settings -> Rename this PC (advanced) -> Change.  Rename the computer (this project renamed the client machine to ‘Client1’) and join the domain, use the image below as reference.
 
+<p align="center"> <img width="601" height="299" alt="image" src="https://github.com/user-attachments/assets/bac0ff11-587a-4af5-be72-d0b78bd90efe" /></p>
 
+<p align="center"> Once this setting is applied, the active directory environment has successfully been created. </p>
 
+<p align="center"> <img width="601" height="324" alt="image" src="https://github.com/user-attachments/assets/961c800b-4239-42dc-a565-67e4316aee4e" /> </p>
 
+Step 12: Congratulations! You’ve reached the end of the project as there’s nothing more to do. Your active directory home lab is now set up and ready for you to use. Enjoy exploring its features, experimenting with different configurations, and having fun learning in your new lab environment.
+
+## Conclusion
+This documented project provided me an understanding of the processes involved in deploying a basic active directory environment, establishing a foundation for developing my practical skills and gaining experience in system administration. It is recommended that the created lab environment be extended by implementing group policies to emulate an organisational structure, alongside further enhancements such as organising users into organisational units (OUs) whilst configuring appropriate access controls and permissions. These additions outside the scope of the project, provide opportunities to build on the existing environment and develop a deeper understanding of active directory management, security, and automation.
+
+## Reference
+▶️ [How to Setup a Basic Home Lab Running Active Directory](https://www.youtube.com/watch?v=MHsI8hJmggI&t=5s)
