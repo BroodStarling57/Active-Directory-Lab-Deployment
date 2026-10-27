@@ -39,4 +39,12 @@ Step 3: Start the DC machine and complete the entire installation process. When 
 
 Step 4: From the desktop, go to the bottom right corner and hover over the network icon. Select ‘Network & Internet Settings’ -> Change Adapter Options. This displays the two network adapters linked to the DC. Rename them accordingly to differentiate between the two, this project renamed them ‘Internet’ and ‘Internal’. The method to distinguishing involves right-clicking each adapter, selecting ‘status’ and checking whether it has a private or APIPA address; the adapter allocated the private, functioning address is connected to the internet whilst the APIPA allocation corresponds to the internal connection. An APIPA is assigned since we have yet to allocate our chosen IP and default gateway for the device within our private network, however the next step shall explain how we shall do this.
 
-Step 5: Right-click on the adapter corresponding to the internal network; Properties -> ‘Internet Protocol Version 4 (TCP/IPv4)’ -> Properties. This presents an interface that allows you to allocate your own IP address, subnet mask, default gateway and DNS. Refer to the topology and insert the aforementioned details. The default gateway is left empty as the DC machine will act as its own DNS server, configured with the necessary features and functions so it won’t require a gateway to reach any external server, hence a loopback address suffices to fill the ‘Preferred DNS Server’ field. </div>
+Step 5: Right-click on the adapter corresponding to the internal network; Properties -> ‘Internet Protocol Version 4 (TCP/IPv4)’ -> Properties. This presents an interface that allows you to allocate your own IP address, subnet mask, default gateway and DNS. Refer to the topology and insert the aforementioned details. The default gateway is left empty as the DC machine will act as its own DNS server, configured with the necessary features and functions so it won’t require a gateway to reach any external server, hence a loopback address suffices to fill the ‘Preferred DNS Server’ field. 
+
+See the image below for reference as to how things should look. </div>
+
+<p align="center"> <img width="940" height="468" alt="image" src="https://github.com/user-attachments/assets/bca01b87-a87e-4eb6-bd70-7e9a35ee16fb" /> </p>
+
+<br>**TIP:** Before the completing the next step, on the interactive menu at the top of the VM, select ‘Devices’ and ‘Insert Guest Additions CD Image’. Then File explorer -> This PC -> ‘CD Drive (D:) VirtualBox Guest Additions’ -> Click and Install ‘VBox WindowsAdditions-amd64’. Once installed, choose to restart manually at a later time. This allows you to resize the VM window as you wish. 
+
+
