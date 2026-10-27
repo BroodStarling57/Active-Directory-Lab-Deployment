@@ -61,5 +61,9 @@ Step 6: Add roles & features -> Add ‘Active Directory Domain Services’ -> Po
 
 <img width="940" height="467" alt="image" src="https://github.com/user-attachments/assets/a4096c9b-924a-4d3a-afd2-27e09b805a02" /> </div>
 
+Step 7: Log back into the domain controller and open server manager. Add roles & features -> Add ‘Remote Access’; when on the role services tab, be sure to tick the routing feature option. On the top-right corner of server manager, go to Tools -> Remote Access & Routing. Right-click ‘DC(local)’ and select ‘Configure Routing and Remote Access’ (The former’s name will change depending on what you have named the DC VM). Once the window opens select NAT type and then ‘Use public interface to connect to the internet’. Click next until confirm/install and close window. Right-click server status once again and refresh, you will see that it becomes green to validate the change that has been implemented.
 
+**Note:** If the ‘Use public interface to connect to the internet’ option is unavailable or unselectable, close the window and repeat the process till it does, this bug is commonly faced when handling this tool, it is nothing to worry about.
+
+Step 8: To implement the DHCP server for our active directory; Add roles & features -> DHCP Server. Click next till you reach the end and install. After installation is complete, open tools in server manager and select DHCP. Expand the tab denoting the name of your domain (this project personally used ‘mydomain.com’ so the tab would be labelled ‘dc.mydomain.com’), right-click IPv4 and select ‘New Scope’. Refer to the topology and input the necessary details. The name of the scope is upto personal discretion, this project simply named it ‘172.16.0.100-200’ (if you forget to input a default gateway, Server Options -> 003 Routing -> Input IP). Authorise the DHCP server following this and refresh IPv4/6.
 
