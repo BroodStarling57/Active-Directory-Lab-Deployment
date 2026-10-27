@@ -30,4 +30,11 @@ Step 1: Download Oracle VirtualBox and relevant ISOs listed above. Create two vi
 <p align="center"> <img width="934" height="502" alt="image" src="https://github.com/user-attachments/assets/0d7e1d65-37fa-4d97-8c7c-66cb4b83aa40" /> </p>
 
 Step 2: After both VM’s have been created, right-click into the DC, Settings -> Expert -> Network; enable two adapters, configuring each to attach respectively to NAT and an internal network. Access the same settings in the client machine but only enable one adapter, configuring it to attach to the internal network.
+
 **Tip:** Before we start using these machines, go to Settings -> Expert -> General -> Features and enable bi-directional drag ‘n drop and shared clipboard for quality-of-life purposes.
+
+Now that’s been completed, for the next few steps we will put aside the client machine and focus solely on configuring our DC VM.
+
+Step 3: Start the DC machine and complete the entire installation process. When choosing the specific version, select ‘Windows Server 2022 standard version (desktop experience)’. Any non-desktop experience options will lead to technical issues/difficulties. Select custom install when asked and disable any optional settings to avoid excessive prompts during the project. When creating your first account credentials to access the desktop, insert a memorable password. This project used ‘Password1’ for all password prompts for simplicity sakes (avoid complex passwords as it will only impede project tasks and progress).
+
+Step 3: Start the DC machine and complete the entire installation process. When choosing the specific version, select ‘Windows Server 2022 standard version (desktop experience)’. Any non-desktop experience options will lead to technical issues/difficulties. Select custom install when asked and disable any optional settings to avoid excessive prompts during the project. When creating your first account credentials to access the desktop, insert a memorable password. This project used ‘Password1’ for all password prompts for simplicity sakes (avoid complex passwords as it will only impede project tasks and progress).
