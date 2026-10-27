@@ -20,3 +20,6 @@ Personal RAM Utilisation for VM’s:
 | **Client1**           | **2GB (2048MB)** | 
 
 ## Topology
+<p align="justify"> The diagram below illustrates the general topology that will be referenced throughout the project, highlighting the overall structure, components and relationships between the various elements involved. </p>
+
+<img width="522" height="292" alt="image" src="https://github.com/user-attachments/assets/fe1aa328-83d7-41c0-9b38-1537fb1d931b" />
